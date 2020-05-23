@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:iOS="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+             iOS:Page.UseSafeArea="True"
+             iOS:NavigationPage.HideNavigationBarSeparator="True"
+             Title="Return Page"
+             x:Class="UITestSample.ReturnPage"
+             BackgroundColor="#F2F2F2">
+    <ContentPage.Content>
+        <Frame
+            Margin="16"
+            VerticalOptions="Center"
+            HorizontalOptions="Fill"
+            BackgroundColor="#FCFCFC"
+            CornerRadius="20"
+            HasShadow="False">
+            <StackLayout
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="CenterAndExpand">
+                <Label
+                    Text="Pagina com retorno" />
+                <Button
+                    x:Name="BtnReturn"
+                    Text="Botao para retornar"
+                    TextColor="Blue"
+                    BackgroundColor="Transparent" />
+            </StackLayout>
+        </Frame>
+    </ContentPage.Content>
+</ContentPage>

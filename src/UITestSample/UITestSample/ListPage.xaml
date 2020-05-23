@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:iOS="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+             iOS:Page.UseSafeArea="True"
+             iOS:NavigationPage.HideNavigationBarSeparator="True"
+             xmlns:converters="clr-namespace:UITestSample.Converters;assembly=UITestSample"
+             Title="List Page"
+             BackgroundColor="#F2F2F2"
+             x:Class="UITestSample.ListPage">
+    <ContentPage.Content>
+        <CollectionView
+            Margin="0,8,0,0"
+            ItemsSource="{Binding Items}"
+            SelectedItem="{Binding SelectedItem}"
+            SelectionMode="Single">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <StackLayout Spacing="0">
+                        <BoxView
+                            x:Name="BoxViewHeader"
+                            BackgroundColor="#FCFCFC"
+                            CornerRadius="20,20,0,0"
+                            HeightRequest="15"
+                            IsVisible="{Binding IsFirst}" />
+
+                        <StackLayout
+                            x:Name="MainLayout"
+                            Padding="16,0,16,0"
+                            BackgroundColor="#FCFCFC"
+                            Spacing="4">
+                            <BoxView HeightRequest="8"
+                                     IsVisible="{Binding IsFirst, Converter={converters:InverseBoolConverter}}" />
+
+                            <Label
+                                FontSize="Medium"
+                                FontAttributes="Bold"
+                                Text="{Binding Title}"
+                                VerticalTextAlignment="Center" />
+
+                            <Label
+                                FontSize="Small"
+                                Text="{Binding Description}"
+                                VerticalTextAlignment="Center" />
+
+                            <BoxView
+                                Margin="0,8,0,0"
+                                BackgroundColor="LightGray"
+                                HeightRequest="1"
+                                HorizontalOptions="FillAndExpand"
+                                IsVisible="{Binding IsLast, Converter={converters:InverseBoolConverter}}" />
+
+                        </StackLayout>
+                        <BoxView
+                            x:Name="BoxViewFooter"
+                            BackgroundColor="#FCFCFC"
+                            CornerRadius="0, 0, 20, 20"
+                            HeightRequest="15"
+                            IsVisible="{Binding IsLast}" />
+                    </StackLayout>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+
+            <CollectionView.EmptyView>
+                <StackLayout>
+                    <Label
+                        x:Name="txtEmpty"
+                        HorizontalOptions="CenterAndExpand"
+                        TextColor="{DynamicResource PrimaryTextColor}"
+                        VerticalOptions="CenterAndExpand" />
+                </StackLayout>
+            </CollectionView.EmptyView>
+        </CollectionView>
+    </ContentPage.Content>
+</ContentPage>

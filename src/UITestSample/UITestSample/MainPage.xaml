@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:iOS="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+             iOS:Page.UseSafeArea="True"
+             NavigationPage.HasNavigationBar="False"
+             x:Class="UITestSample.MainPage"
+             BackgroundColor="#F2F2F2">
+
+    <StackLayout
+        VerticalOptions="Center"
+        HorizontalOptions="Center">
+        <Label
+            HorizontalTextAlignment="Center"
+            Text="Exemplos de testes de UI"
+            FontSize="Large" />
+        <Frame
+            Margin="16"
+            BackgroundColor="#FCFCFC"
+            CornerRadius="20"
+            HasShadow="False">
+            <StackLayout
+                VerticalOptions="Center"
+                Margin="16">
+                <Label
+                    HorizontalTextAlignment="Center"
+                    Text="Teste indo para outra pagina" />
+                <Button
+                    x:Name="BtnSample"
+                    BackgroundColor="Transparent"
+                    TextColor="Green"
+                    Text="Botao para pagina simples" />
+                <Label
+                    HorizontalTextAlignment="Center"
+                    Text="Teste indo para outra pagina e voltando por botao e por Back nativo" />
+                <Button
+                    x:Name="BtnReturn"
+                    TextColor="Coral"
+                    Text="Botao para pagina com retorno" />
+                <Label
+                    HorizontalTextAlignment="Center"
+                    Text="Teste indo para outra pagina e clicando no primeiro item da lista" />
+                <Button
+                    x:Name="BtnList"
+                    TextColor="Red"
+                    Text="Botao para pagina com lista" />
+
+            </StackLayout>
+        </Frame>
+    </StackLayout>
+
+
+</ContentPage>

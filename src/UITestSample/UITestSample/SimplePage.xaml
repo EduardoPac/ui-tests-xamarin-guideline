@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:iOS="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+             iOS:Page.UseSafeArea="True"
+             iOS:NavigationPage.HideNavigationBarSeparator="True"
+             x:Class="UITestSample.SimplePage"
+             Title="Simple Page"
+             BackgroundColor="#F2F2F2">
+    <ContentPage.Content>
+        <Frame
+            Margin="16"
+            VerticalOptions="Center"
+            HorizontalOptions="Fill"
+            BackgroundColor="#FCFCFC"
+            CornerRadius="20"
+            HasShadow="False">
+            <StackLayout
+                VerticalOptions="Center"
+                Margin="16">
+                <Label
+                    Text="Foi para pagina simples, uhu!"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="CenterAndExpand" />
+            </StackLayout>
+        </Frame>
+    </ContentPage.Content>
+</ContentPage>
