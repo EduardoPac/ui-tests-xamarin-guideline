@@ -36,6 +36,7 @@
                     Text="Teste indo para outra pagina e voltando por botao e por Back nativo" />
                 <Button
                     x:Name="BtnReturn"
+                    BackgroundColor="Transparent"
                     TextColor="Coral"
                     Text="Botao para pagina com retorno" />
                 <Label
@@ -43,6 +44,7 @@
                     Text="Teste indo para outra pagina e clicando no primeiro item da lista" />
                 <Button
                     x:Name="BtnList"
+                    BackgroundColor="Transparent"
                     TextColor="Red"
                     Text="Botao para pagina com lista" />
 

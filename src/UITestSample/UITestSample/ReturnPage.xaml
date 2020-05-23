@@ -20,7 +20,8 @@
                 VerticalOptions="CenterAndExpand"
                 HorizontalOptions="CenterAndExpand">
                 <Label
-                    Text="Pagina com retorno" />
+                    Text="Pagina com retorno" 
+                    HorizontalTextAlignment="Center"/>
                 <Button
                     x:Name="BtnReturn"
                     Text="Botao para retornar"
