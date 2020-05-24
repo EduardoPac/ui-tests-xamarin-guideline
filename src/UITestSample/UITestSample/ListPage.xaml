@@ -11,6 +11,7 @@
              x:Class="UITestSample.ListPage">
     <ContentPage.Content>
         <CollectionView
+            AutomationId="collectionView"
             Margin="0,8,0,0"
             ItemsSource="{Binding Items}"
             SelectedItem="{Binding SelectedItem}"

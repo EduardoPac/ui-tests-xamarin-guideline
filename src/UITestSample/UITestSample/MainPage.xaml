@@ -28,6 +28,7 @@
                     Text="Teste indo para outra pagina" />
                 <Button
                     x:Name="BtnSample"
+                    AutomationId="btnSample"
                     BackgroundColor="Transparent"
                     TextColor="Green"
                     Text="Botao para pagina simples" />
@@ -36,14 +37,17 @@
                     Text="Teste indo para outra pagina e voltando por botao e por Back nativo" />
                 <Button
                     x:Name="BtnReturn"
+                    AutomationId="btnReturn"
                     BackgroundColor="Transparent"
                     TextColor="Coral"
                     Text="Botao para pagina com retorno" />
                 <Label
+                    StyleId="lbl_2"
                     HorizontalTextAlignment="Center"
                     Text="Teste indo para outra pagina e clicando no primeiro item da lista" />
                 <Button
                     x:Name="BtnList"
+                    AutomationId="btnList"
                     BackgroundColor="Transparent"
                     TextColor="Red"
                     Text="Botao para pagina com lista" />

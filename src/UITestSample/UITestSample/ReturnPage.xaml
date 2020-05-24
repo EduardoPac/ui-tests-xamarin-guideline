@@ -24,6 +24,7 @@
                     HorizontalTextAlignment="Center"/>
                 <Button
                     x:Name="BtnReturn"
+                    AutomationId="btnReturn"
                     Text="Botao para retornar"
                     TextColor="Blue"
                     BackgroundColor="Transparent" />
