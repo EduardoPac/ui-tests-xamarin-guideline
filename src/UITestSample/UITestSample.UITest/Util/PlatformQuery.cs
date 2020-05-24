@@ -4,7 +4,7 @@ using Xamarin.UITest.Queries;
 
 namespace UITestSample.UITest
 {
-    public abstract class PlatformQuery
+    public class PlatformQuery
     {
         public Func<AppQuery, AppQuery> Android
         {

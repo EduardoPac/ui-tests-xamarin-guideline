@@ -4,10 +4,10 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:iOS="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
              iOS:Page.UseSafeArea="True"
-             NavigationPage.HasNavigationBar="False"
              x:Class="UITestSample.MainPage"
+             NavigationPage.HasNavigationBar="False"
+             AutomationId="main_page"
              BackgroundColor="#F2F2F2">
-
     <StackLayout
         VerticalOptions="Center"
         HorizontalOptions="Center">
@@ -28,7 +28,7 @@
                     Text="Teste indo para outra pagina" />
                 <Button
                     x:Name="BtnSample"
-                    AutomationId="btnSample"
+                    AutomationId="btn_sample"
                     BackgroundColor="Transparent"
                     TextColor="Green"
                     Text="Botao para pagina simples" />
@@ -37,7 +37,7 @@
                     Text="Teste indo para outra pagina e voltando por botao e por Back nativo" />
                 <Button
                     x:Name="BtnReturn"
-                    AutomationId="btnReturn"
+                    AutomationId="btn_return"
                     BackgroundColor="Transparent"
                     TextColor="Coral"
                     Text="Botao para pagina com retorno" />
@@ -47,7 +47,7 @@
                     Text="Teste indo para outra pagina e clicando no primeiro item da lista" />
                 <Button
                     x:Name="BtnList"
-                    AutomationId="btnList"
+                    AutomationId="btn_list"
                     BackgroundColor="Transparent"
                     TextColor="Red"
                     Text="Botao para pagina com lista" />

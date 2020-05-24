@@ -6,10 +6,10 @@
              iOS:Page.UseSafeArea="True"
              iOS:NavigationPage.HideNavigationBarSeparator="True"
              x:Class="UITestSample.SimplePage"
+             AutomationId="simple_page"
              Title="Simple Page"
              BackgroundColor="#F2F2F2">
-    <ContentPage.Content>
-        <Frame
+    <Frame
             Margin="16"
             VerticalOptions="Center"
             HorizontalOptions="Fill"
@@ -25,5 +25,4 @@
                     HorizontalOptions="CenterAndExpand" />
             </StackLayout>
         </Frame>
-    </ContentPage.Content>
 </ContentPage>

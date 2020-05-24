@@ -28,11 +28,16 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Tests" />
     <Folder Include="Util\" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Pages\ListPage.cs" />
+    <Compile Include="Pages\MainPage.cs" />
+    <Compile Include="Pages\ReturnPage.cs" />
+    <Compile Include="Pages\SimplePage.cs" />
     <Compile Include="ReplInit.cs" />
+    <Compile Include="Tests\ReturnFlow.cs" />
+    <Compile Include="Tests\SimpleFlow.cs" />
     <Compile Include="Util\AppManager.cs" />
     <Compile Include="Util\BasePage.cs" />
     <Compile Include="Util\BaseTestFixture.cs" />

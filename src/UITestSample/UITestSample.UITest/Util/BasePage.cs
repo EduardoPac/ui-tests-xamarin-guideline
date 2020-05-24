@@ -6,7 +6,7 @@ namespace UITestSample.UITest
 {
     public abstract class BasePage
     {
-        static IApp App => AppManager.App;
+        internal static IApp App => AppManager.App;
         protected bool OnAndroid => AppManager.Platform == Platform.Android;
         protected bool OniOS => AppManager.Platform == Platform.iOS;
 
