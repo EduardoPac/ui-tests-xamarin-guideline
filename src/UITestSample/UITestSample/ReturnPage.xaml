@@ -5,8 +5,9 @@
              xmlns:iOS="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
              iOS:Page.UseSafeArea="True"
              iOS:NavigationPage.HideNavigationBarSeparator="True"
-             Title="Return Page"
              x:Class="UITestSample.ReturnPage"
+             Title="Return Page"
+             AutomationId="return_page"
              BackgroundColor="#F2F2F2">
     <ContentPage.Content>
         <Frame
@@ -24,6 +25,7 @@
                     HorizontalTextAlignment="Center"/>
                 <Button
                     x:Name="BtnReturn"
+                    AutomationId="btn_return"
                     Text="Botao para retornar"
                     TextColor="Blue"
                     BackgroundColor="Transparent" />
