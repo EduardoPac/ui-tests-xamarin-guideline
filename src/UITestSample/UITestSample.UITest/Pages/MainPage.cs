@@ -4,9 +4,9 @@ namespace UITestSample.UITest.Pages
 {
     public class MainPage : BasePage
     {
-        readonly Query simpleButton;
-        readonly Query returnButton;
-        readonly Query listButton;
+        readonly Query _simpleButton;
+        readonly Query _returnButton;
+        readonly Query _listButton;
 
         protected override PlatformQuery Trait => new PlatformQuery
         {
@@ -16,27 +16,32 @@ namespace UITestSample.UITest.Pages
 
         public MainPage()
         {
-            simpleButton = x => x.Marked("btn_sample");
-            returnButton = x => x.Marked("btn_return");
-            listButton = x => x.Marked("btn_list");
+            _simpleButton = x => x.Marked("btn_sample");
+            _returnButton = x => x.Marked("btn_return");
+            _listButton = x => x.Marked("btn_list");
         }
 
-        public void ClickBtnSample()
+        public MainPage ClickBtnSample()
         {
-            App.WaitForElement(simpleButton);
-            App.Tap(simpleButton);
+            App.WaitForElement(_simpleButton);
+            App.Tap(_simpleButton);
+
+            return this;
         }
 
-        public void ClickBtnReturn()
+        public MainPage ClickBtnReturn()
         {
-            App.WaitForElement(returnButton);
-            App.Tap(returnButton);
+            App.WaitForElement(_returnButton);
+            App.Tap(_returnButton);
+            return this;
         }
 
-        public void ClickBtnList()
+        public MainPage ClickBtnList()
         {
-            App.WaitForElement(listButton);
-            App.Tap(listButton);
+            App.WaitForElement(_listButton);
+            App.Tap(_listButton);
+
+            return this;
         }
     }
 }

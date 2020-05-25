@@ -4,7 +4,7 @@ namespace UITestSample.UITest.Pages
 {
     public class ReturnPage : BasePage
     {
-        readonly Query returnButton;
+        readonly Query _returnButton;
         protected override PlatformQuery Trait => new PlatformQuery
         {
             Android = x => x.Marked("return_page"),
@@ -13,15 +13,13 @@ namespace UITestSample.UITest.Pages
 
         public ReturnPage()
         {
-            returnButton = x => x.Marked("btn_return");
+            _returnButton = x => x.Marked("btn_return");
         }
 
         public void BackButton()
         {
-            App.WaitForElement(returnButton);
-            App.Tap(returnButton);
+            App.WaitForElement(_returnButton);
+            App.Tap(_returnButton);
         }
-
-        public void Back() => App.Back();
     }
 }

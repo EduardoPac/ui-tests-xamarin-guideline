@@ -7,7 +7,5 @@ namespace UITestSample.UITest.Pages
             Android = x => x.Marked("simple_page"),
             iOS = x => x.Marked("simple_page")
         };
-
-        public void Back() => App.Back();
     }
 }

@@ -14,7 +14,6 @@ namespace UITestSample.UITest.Tests
         public void EnterSimplePageAndBack()
         {
             new MainPage().ClickBtnSample();
-            
             new SimplePage().Back();
         }
     }
